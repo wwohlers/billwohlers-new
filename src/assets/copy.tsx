@@ -6,7 +6,19 @@ import { assets } from "./index";
 export const copy = {
   findMeOn: {
     text: "Find me on",
-    subtext: "wohlers.w@northeastern.edu · Built with React",
+    subtext: (
+      <>
+        <span>wohlers.w@northeastern.edu</span>
+        <span> &bull; </span>
+        <a
+          href="https://github.com/wwohlers/billwohlers-new"
+          target="_blank"
+          className="gray"
+        >
+          Built with React
+        </a>
+      </>
+    ),
     items: [
       {
         logo: assets.logos.orgs.linkedin,
@@ -29,7 +41,7 @@ export const copy = {
     intro: {
       header: "Hi, I'm Bill",
       subtitle:
-        "I build websites, mobile apps, and other software for startups and innovative tech companies",
+        "I build beautiful & functional web apps using modern technologies",
     },
     who: {
       header: "A little bit about me",
@@ -39,30 +51,30 @@ export const copy = {
         "I'm attending": "Northeastern University (class of 2023)",
         "My major is": "computer science",
         "I'm passionate about": "software design and engineering",
-        "Right now, I'm": "a software engineer at Reprise",
+        // "Right now, I'm": "a software engineer at Reprise",
       },
     },
     techInterests: {
-      header: "My tech stack",
-      useCaseText: "Use Cases",
+      header: "My go-to tech stack",
+      useCaseText: "For",
       items: [
         {
           name: "TypeScript",
           logo: assets.logos.techs.typescript,
           tagline: "Versatile and rich ecosystem",
-          useCases: "Web clients, servers, mobile apps, and other software",
+          useCases: "web clients, servers, mobile apps, and other software",
         },
         {
           name: "React",
           logo: assets.logos.techs.react,
           tagline: "Expressive and scalable",
-          useCases: "Web clients and mobile apps (React Native)",
+          useCases: "web clients and mobile apps (React Native)",
         },
         {
           name: "NestJS",
           logo: assets.logos.techs.nest,
           tagline: "Robust and structured",
-          useCases: "Web servers",
+          useCases: "web servers and back-end software",
         },
       ],
       more: "See my Design Thoughts",
@@ -71,8 +83,8 @@ export const copy = {
       header: "My experience",
       items: [
         {
-          header: "By day",
-          text: "I've developed and maintained websites and mobile apps professionally for three years",
+          header: "Professional",
+          text: "Three years of web & app development experience on code bases large and small",
           logos: [
             assets.logos.orgs.c4c,
             assets.logos.orgs.chapter,
@@ -82,8 +94,8 @@ export const copy = {
           ],
         },
         {
-          header: "By night",
-          text: "As a hobby, I develop websites, mobile apps, npm libraries, and more",
+          header: "In my free time",
+          text: "As a hobby, I build websites, mobile apps, npm libraries, and more",
           logos: [
             assets.logos.orgs.stride,
             assets.logos.orgs.huskyhusky,
@@ -111,7 +123,7 @@ export const copy = {
       ],
       degree: {
         name: "B.S. in Computer Science",
-        gpa: 3.91,
+        gpa: 3.9,
         courses: {
           "Fundamentals of CS 1": "B+",
           "Honors Discrete Structures": "A",
@@ -144,6 +156,7 @@ export const copy = {
       Git: 0.6,
       "React Native": 0.5,
       "UI/UX Design": 0.5,
+      "C": 0.4,
       Docker: 0.4,
       Kotlin: 0.4,
       Python: 0.4,
@@ -154,9 +167,12 @@ export const copy = {
         title: "Software Engineer at Reprise",
         logo: assets.logos.orgs.reprise,
         logoUrl: "https://getreprise.com",
-        dates: "Jan 2022 - Jun 2022 (current)",
-        tags: ["6-month co-op", "Full-stack web development"],
-        responsibilities: [],
+        dates: "Jan 2022 - Jun 2022",
+        tags: ["6-month co-op", "Vue", "Python"],
+        responsibilities: [
+          "Realized modern UI concepts using Vue/TailwindCSS as part of a major app redesign",
+          "Built out new back-end features for major changes to core software platform"
+        ],
       },
       {
         title: "Software Engineer at Poloniex",

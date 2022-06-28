@@ -13,8 +13,8 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <div className="py-8 border-b border-gray-200">
-      <div className="content flex flex-row justify-between content-center">
+    <div className="py-4 border-b border-gray-200">
+      <div className="content flex flex-row justify-between items-center">
         <p className="text-2xl font-light cursor-pointer" onClick={goHome}>
           Bill Wohlers
         </p>

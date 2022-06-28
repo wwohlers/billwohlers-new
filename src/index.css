@@ -1,65 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    a {
-        @apply border-b border-black;
-    }
+  a {
+    @apply border-b border-black;
+  }
 }
 
 @layer utilities {
-    .shadow-bottom-left {
-        box-shadow: #BBB -2px 2px 8px;
-    }
+  .shadow-bottom-left {
+    box-shadow: #bbb -1px 1px 4px;
+  }
 
-    .upside-down {
-        transform: rotate(180deg);
-    }
+  .upside-down {
+    transform: rotate(180deg);
+  }
 
-    .transition-dropdown {
-        transition-property: max-height, opacity;
-    }
+  .transition-dropdown {
+    transition-property: max-height, opacity;
+  }
 
-    .max-h-huge {
-        max-height: 1000px;
-    }
+  .max-h-huge {
+    max-height: 1000px;
+  }
 
-    /**
+  /**
      * Any element before it "loads", visually, in which it will appear and move down slightly.
      */
-    .before-load {
-        opacity: 0;
-        transform: translateX(-4rem);
-    }
+  .before-load {
+    opacity: 0;
+    transform: translateX(-4rem);
+  }
+
+  .interactive {
+    @apply hover:translate-x-px
+            hover:-translate-y-px
+            transition
+            duration-300;
+  }
+
+  .enlarge {
+    transform: scale(1.02);
+  }
+
+  a.gray {
+    @apply border-b-gray-400;
+  }
 }
 
 @layer components {
-    .content {
-        @apply
-            w-10/12
+  .content {
+    @apply w-10/12
             sm:w-10/12
             md:w-3/4
             lg:w-3/5
             2xl:w-1/2
             mx-auto;
-    }
+  }
 
-    .interactive {
-        @apply
-            hover:translate-x-0.5
-            hover:-translate-y-0.5
-            hover:shadow-bottom-left
-            transition
-            duration-300;
-    }
-
-    .button {
-        @apply
-            px-4
-            py-2
+  .button {
+    @apply px-4
+            py-2.5
             cursor-pointer
             bg-gray-800
             text-white
@@ -67,9 +71,9 @@
             uppercase
             rounded-sm
             interactive;
-    }
+  }
 
-    .spaced-children > p {
-        @apply mb-4;
-    }
+  .spaced-children > p {
+    @apply mb-4;
+  }
 }
