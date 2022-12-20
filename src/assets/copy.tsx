@@ -95,8 +95,9 @@ export const copy = {
         },
         {
           header: "In my free time",
-          text: "As a hobby, I build websites, mobile apps, npm libraries, and more",
+          text: "As a hobby, I build websites, apps, npm libraries, and more",
           logos: [
+            assets.logos.orgs.undue,
             assets.logos.orgs.stride,
             assets.logos.orgs.huskyhusky,
             assets.logos.orgs.dunk,
@@ -136,19 +137,21 @@ export const copy = {
           "Algorithms & Data": "A",
           "Networks & Distributed Systems": "A",
           "Software Development": "A-",
+          "Computer Systems": "A",
+          "Web Development": "A",
+          "Fundamentals of Digital Design": "A",
         },
       },
     },
     professionalSummary: [
-      "I love software engineering and all its joys and challenges. I'm particularly interested in full-stack web design and development, including mobile app development with React Native.",
+      "I love software engineering and all of its possibilities and challenges. I'm particularly interested in full-stack web design and development, including mobile app development with React Native.",
       "My ideal organization or team is fast-paced, embraces modern technology, and embodies the creative spirit of engineering.",
     ],
     skills: {
       "TypeScript/JS": 1,
-      Writing: 1,
       React: 0.9,
       "HTML/CSS": 0.9,
-      NestJS: 0.9,
+      "Next.js": 0.9,
       Vue: 0.8,
       "REST API Design": 0.8,
       AWS: 0.7,
@@ -156,7 +159,7 @@ export const copy = {
       Git: 0.6,
       "React Native": 0.5,
       "UI/UX Design": 0.5,
-      "C": 0.4,
+      C: 0.4,
       Docker: 0.4,
       Kotlin: 0.4,
       Python: 0.4,
@@ -171,7 +174,7 @@ export const copy = {
         tags: ["6-month co-op", "Vue", "Python"],
         responsibilities: [
           "Realized modern UI concepts using Vue/TailwindCSS as part of a major app redesign",
-          "Built out new back-end features for major changes to core software platform"
+          "Built out new back-end features for major changes to core software platform",
         ],
       },
       {
@@ -223,6 +226,17 @@ export const copy = {
       },
     ],
     projects: [
+      {
+        title: "Undue",
+        logo: assets.logos.orgs.undue,
+        logoUrl: "https://getundue.com",
+        dates: "August 2022",
+        tags: ["Solo app development", "React Native"],
+        responsibilities: [
+          "Designed Undue, a planning/calendar app with a focus on simplicity and ease of use",
+          "Architected and developed the app using React Native/Expo",
+        ],
+      },
       {
         title: "Dunk.js",
         logo: assets.logos.orgs.dunk,

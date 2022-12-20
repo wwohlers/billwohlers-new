@@ -1,4 +1,4 @@
-import me from "./me.png"
+import me from "./me.png";
 import react from "./react.png";
 import dunk from "./dunk.png";
 import mikefo from "./mikefo.webp";
@@ -15,6 +15,7 @@ import github from "./github.png";
 import vue from "./vue.png";
 import typescript from "./typescript.png";
 import nest from "./nest.jpeg";
+import undue from "./undue_logo.png";
 
 export const assets = {
   me,
@@ -32,12 +33,13 @@ export const assets = {
       medium,
       linkedin,
       github,
+      undue,
     },
     techs: {
       react,
       vue,
       typescript,
       nest,
-    }
+    },
   },
 };
